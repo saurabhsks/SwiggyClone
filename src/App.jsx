@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <div>React Setup is ready Saurabh</div>
+      <div className='text-3xl'>React Setup is ready Saurabh</div>
     </>
   )
 }
