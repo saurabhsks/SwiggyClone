@@ -42,7 +42,7 @@ export default function Header() {
 
   return (
     <>
-     <div className='black-overlay w-full h-full fixed duration-500' onClick={hideSideMenu} style={{
+     <div className='black-overlay bg-white w-full h-full fixed duration-500' onClick={hideSideMenu} style={{
         opacity:toggle ? 99999:0,
         visibility:toggle ? "visible" : "hidden"
      }}>
@@ -65,7 +65,7 @@ export default function Header() {
         <span className='font-bold border-b-[3px] border-[black] mr-3'>Ratanada</span>
          Jodhpur,Rajasthan, India <RxCaretDown onClick={showSideMenu} fontSize={25} className='cursor-pointer font-bold inline text-[#fc8019]'/>
       </div>
-      <nav className='flex list-none gap-10 ml-auto text-[17px] font-semibold'>
+      <nav className='hidden md:flex list-none gap-10 ml-auto text-[17px] font-semibold'>
        {
           links.map(
             (link,index)=>{

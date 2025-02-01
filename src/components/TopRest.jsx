@@ -5,6 +5,7 @@ import Card from './Card';
 
 export default function TopRest() {
     const [data, setData]=useState([]);
+    const [slide, setSlide]=useState(0);
 
     const fetchTopRestaurant = async () =>{
             try {
@@ -23,6 +24,18 @@ export default function TopRest() {
                 fetchTopRestaurant();
             },[]
         )
+
+        const nextSlide = () =>{
+            console.log("clicked")
+            console.log(categories.length);
+            if(categories.length - 8 == slide) return false;
+            setSlide(slide+3);
+        }
+    
+        const prevSlide = () =>{
+            if(slide == 0) return false;
+            setSlide(slide-3);
+        }
 
   return (
     // <div className='flex'>
@@ -47,11 +60,11 @@ export default function TopRest() {
     <div className='flex'>
         <div className='flex cursor-pointer justify-center items-center w-[30px] h-[30px] bg-[#e2e2e7]
           rounded-full mx-2' >
-            <FaArrowLeft />
+            <FaArrowLeft onClick={prevSlide}/>
           </div>
           <div className='flex cursor-pointer justify-center items-center w-[30px] h-[30px] bg-[#e2e2e7]
           rounded-full mx-2'>
-            <FaArrowRight />
+            <FaArrowRight onClick={nextSlide}/>
           </div>
     </div>
 
@@ -60,13 +73,16 @@ export default function TopRest() {
     {
         data.map(
             (d,i) =>{
-                return <Card {...d} key={i}/>
+                return <div className='' style={{
+                        transform: `translateX(-${slide*100}%)`
+                    }}><Card width="w-full md:w-[273px]" {...d} key={i}/> </div>
             }
         )
     }
         {/* <Card/> */}
         
     </div>
+    <hr className="my-6 border-[0.5px]" />
 
     </div>
 

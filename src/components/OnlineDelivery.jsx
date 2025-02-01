@@ -3,6 +3,8 @@ import Card from './Card';
 
 export default function OnlineDelivery() {
     const [data, setData]=useState([]);
+
+    
     
         const fetchTopRestaurant = async () =>{
                 try {
@@ -28,7 +30,7 @@ export default function OnlineDelivery() {
         <div className='text-[25px] font-bold'>Restaurants with online food delivery in Ranchi</div>
         </div>
         {/* <div> */}
-            <div className='max-w-[1200px] mx-auto flex my-4 gap-4 cursor-pointer'>
+            <div className='max-w-[1200px] mx-auto hidden md:flex my-4 gap-4 cursor-pointer'>
              <div className='cMBpNp p-3 rounded-md-shadow'>Filter</div>
              <div className='cMBpNp p-3 rounded-md-shadow'>Sort By</div>
              <div className='cMBpNp p-3 rounded-md-shadow'>Fast Delivery</div>
@@ -42,7 +44,7 @@ export default function OnlineDelivery() {
 
             </div>
         {/* </div> */}
-        <div className='grid grid-cols-4 gap-3'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-3'>
         {
             data.map(
                 (d,i)=>{
