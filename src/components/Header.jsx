@@ -62,7 +62,7 @@ export default function Header() {
         <img src="src/assets/logo.png" className='w-full' alt=""/>
       </div>
       <div className=''>
-        <span className='font-bold border-b-[3px] border-[black] mr-3'>Patliputra Colony</span>
+        <span className='font-bold border-b-[3px] border-[black] mr-3'>Saurabh's Restaurant</span>
          Patna,Bihar,India <RxCaretDown onClick={showSideMenu} fontSize={25} className='cursor-pointer font-bold inline text-[#fc8019]'/>
       </div>
       <nav className='hidden md:flex list-none gap-10 ml-auto text-[17px] font-semibold'>
