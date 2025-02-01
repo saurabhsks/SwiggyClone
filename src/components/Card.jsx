@@ -8,20 +8,20 @@ export default function Card(props) {
     //    src={"http://localhost:5000/images/" + props.image}
     src={"https://swiggyapis-ctp4.onrender.com/images/" + props.image}
         alt=''/>    
-      <div className='image-overlay absolute w-full bottom-0 flex items items-end p-2 text-[25px]
+      <div className='image-overlay absolute w-full bottom-0 flex items items-end p-2 text-[16px] md:text-[25px]
        font-bold text-white tracking-tighter'>
         {props.offer}
        </div> 
         
       </div> 
-      <div className='mt-3 text-xl font-bold'>
+      <div className='mt-3 text-[14px] md:text-xl font-bold'>
         {props.title}
        </div> 
-       <div className='flex'>
+       <div className='flex sm:text-[12px]'>
         <Star className='inline mr-2' />{props.rating}
         <span className='ml-2'>{props.minTime} - {props.maxTime} mins</span>
        </div> 
-       <div className='text-slate-700'>
+       <div className='text-[12px] md:text-slate-700'>
         {props.name}
         <br/>
         {props.place}
