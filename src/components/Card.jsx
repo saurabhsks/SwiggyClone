@@ -4,7 +4,10 @@ export default function Card(props) {
   return (
     <div className={`${props.width} mb-3 shrink-0 cursor-pointer`}>
       <div className='group h-[182px] rounded-[15px] overflow-hidden relative'>
-      <img className='group-hover:scale-110 duration-150 object-cover w-full h-full' src={"http://localhost:5000/images/" + props.image} alt=''/>
+      <img className='group-hover:scale-110 duration-150 object-cover w-full h-full'
+    //    src={"http://localhost:5000/images/" + props.image}
+    src={"https://swiggyapis-ctp4.onrender.com/images/" + props.image}
+        alt=''/>    
       <div className='image-overlay absolute w-full bottom-0 flex items items-end p-2 text-[25px]
        font-bold text-white tracking-tighter'>
         {props.offer}

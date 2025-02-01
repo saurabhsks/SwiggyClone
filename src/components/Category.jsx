@@ -10,7 +10,8 @@ export default function Category() {
 
     const fetchCategory = async () =>{
         try {
-            const response = await fetch("http://localhost:5000/categories");
+            // const response = await fetch("http://localhost:5000/categories");
+            const response = await fetch("https://swiggyapis-ctp4.onrender.com/categories");
             console.log("fetched")
             const data = await response.json();
             setCategory(data);
@@ -65,7 +66,8 @@ export default function Category() {
                         transform: `translateX(-${slide*100}%)`
                     }} 
                     key={index} className='w-[150px] shrink-0 duration-500'>
-                        <img src={"http://localhost:5000/images/" + cat.image} alt="" />
+                        {/* <img src={"http://localhost:5000/images/" + cat.image} alt="" /> */}
+                        <img src={"https://swiggyapis-ctp4.onrender.com/images/" + cat.image} alt="" />
                     </div>
                 )
             }

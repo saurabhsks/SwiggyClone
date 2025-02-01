@@ -9,7 +9,8 @@ export default function TopRest() {
 
     const fetchTopRestaurant = async () =>{
             try {
-                const response = await fetch("http://localhost:5000/top-restaurant-chains");
+                // const response = await fetch("http://localhost:5000/top-restaurant-chains");
+                const response = await fetch("https://swiggyapis-ctp4.onrender.com/top-restaurant-chains");
                 console.log("fetched toprest")
                 const apidata = await response.json();
                 setData(apidata);
@@ -38,23 +39,7 @@ export default function TopRest() {
         }
 
   return (
-    // <div className='flex'>
-    //   {
-    //     data.map(
-    //         (cat,index) =>{
-    //             return (
-    //                 <div
-                      
-    //                 key={index} className='flex w-[150px] shrink-0 duration-500'>
-    //                     <img src={"http://localhost:5000/images/" + cat.image} alt="" />
-    //                 </div>
-    //             )
-    //         }
-    //     )
-    //  }
-
-    // </div>
- <div className='max-w-[1200px] mx-auto mb-5'>
+    <div className='max-w-[1200px] mx-auto mb-5'>
     <div className='flex my-5 items-center justify-between'>
     <div className='text-[25px] font-bold'>Top Restaurant in Jodhpur</div>
     <div className='flex'>
@@ -78,9 +63,7 @@ export default function TopRest() {
                     }}><Card width="w-full md:w-[273px]" {...d} key={i}/> </div>
             }
         )
-    }
-        {/* <Card/> */}
-        
+    }        
     </div>
     <hr className="my-6 border-[0.5px]" />
 

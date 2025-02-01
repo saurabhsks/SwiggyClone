@@ -8,7 +8,8 @@ export default function OnlineDelivery() {
     
         const fetchTopRestaurant = async () =>{
                 try {
-                    const response = await fetch("http://localhost:5000/top-restaurant-chains");
+                    const response = await fetch("https://swiggyapis-ctp4.onrender.com/top-restaurant-chains");
+                    // const response = await fetch("http://localhost:5000/top-restaurant-chains");
                     console.log("fetched toprest")
                     const apidata = await response.json();
                     setData(apidata);
@@ -31,16 +32,16 @@ export default function OnlineDelivery() {
         </div>
         {/* <div> */}
             <div className='max-w-[1200px] mx-auto hidden md:flex my-4 gap-4 cursor-pointer'>
-             <div className='cMBpNp p-3 rounded-md-shadow'>Filter</div>
-             <div className='cMBpNp p-3 rounded-md-shadow'>Sort By</div>
-             <div className='cMBpNp p-3 rounded-md-shadow'>Fast Delivery</div>
-             <div className='cMBpNp p-3 rounded-md-shadow'>New on Swiggy</div>
-             <div className='cMBpNp p-3 rounded-md-shadow'>Ratings 4.0+</div>
-             <div className='cMBpNp p-3 rounded-md-shadow'>Pure Veg</div>
-             <div className='cMBpNp p-3 rounded-md-shadow'>Offers</div>
-             <div className='cMBpNp p-3 rounded-md-shadow'>Rs.300-Rs.600</div>
-             <div className='cMBpNp p-3 rounded-md-shadow'>Less than Rs.300</div>
-             <div className='cMBpNp p-3 rounded-md-shadow'>Special Offers</div>
+             <div className='group cMBpNp p-3 rounded-md-shadow'><span className='group-hover:scale-110 duration-150'>Filter</span></div>
+             <div className='group-hover:scale-110 duration-150 cMBpNp p-3 rounded-md-shadow'>Sort By</div>
+             <div className='group-hover:scale-110 duration-150 cMBpNp p-3 rounded-md-shadow'>Fast Delivery</div>
+             <div className='group-hover:scale-110 duration-150 cMBpNp p-3 rounded-md-shadow'>New on Swiggy</div>
+             <div className='group-hover:scale-110 duration-150 cMBpNp p-3 rounded-md-shadow'>Ratings 4.0+</div>
+             <div className='group-hover:scale-110 duration-150 cMBpNp p-3 rounded-md-shadow'>Pure Veg</div>
+             <div className='group-hover:scale-110 duration-150 cMBpNp p-3 rounded-md-shadow'>Offers</div>
+             <div className='group-hover:scale-110 duration-150 cMBpNp p-3 rounded-md-shadow'>Rs.300-Rs.600</div>
+             <div className='group-hover:scale-110 duration-150 cMBpNp p-3 rounded-md-shadow'>Less than Rs.300</div>
+             <div className='group-hover:scale-110 duration-150 cMBpNp p-3 rounded-md-shadow'>Special Offers</div>
 
             </div>
         {/* </div> */}
