@@ -28,10 +28,10 @@ export default function OnlineDelivery() {
   return (
     <div className='max-w-[1200px] mx-auto mb-5'>
         <div className='flex my-5 items-center justify-between'>
-        <div className='text-[25px] font-bold'>Restaurants with online food delivery in Ranchi</div>
+        <div className='text-[25px] font-bold'>Restaurants with online food delivery in Jaipur</div>
         </div>
         {/* <div> */}
-            <div className='max-w-[1200px] mx-auto hidden md:flex my-4 gap-4 cursor-pointer'>
+            <div className='max-w-[1200px] mx-auto md:flex my-4 gap-4 cursor-pointer'>
              <div className='group cMBpNp p-3 rounded-md-shadow'><span className='group-hover:scale-110 duration-150'>Filter</span></div>
              <div className='group-hover:scale-110 duration-150 cMBpNp p-3 rounded-md-shadow'>Sort By</div>
              <div className='group-hover:scale-110 duration-150 cMBpNp p-3 rounded-md-shadow'>Fast Delivery</div>

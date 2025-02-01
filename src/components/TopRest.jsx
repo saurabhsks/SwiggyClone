@@ -28,14 +28,23 @@ export default function TopRest() {
 
         const nextSlide = () =>{
             console.log("clicked")
-            console.log(categories.length);
-            if(categories.length - 8 == slide) return false;
-            setSlide(slide+3);
+            console.log(data.length);
+            if(data.length - 4 == slide) return false;
+            setSlide(slide+2);
+            // Check if the screen width is less than 768px (mobile)
+    // const isMobile = window.innerWidth < 768;
+    
+    // // Set the limit based on the screen size
+    // const limit = isMobile ? data.length - 2 : data.length - 4;
+
+    // if (slide >= limit) return;
+    
+    // setSlide(slide + 2);
         }
     
         const prevSlide = () =>{
             if(slide == 0) return false;
-            setSlide(slide-3);
+            setSlide(slide-2);
         }
 
   return (
@@ -58,7 +67,7 @@ export default function TopRest() {
     {
         data.map(
             (d,i) =>{
-                return <div className='' style={{
+                return <div className='transition-transform duration-500 ease-in-out' style={{
                         transform: `translateX(-${slide*100}%)`
                     }}><Card width="w-full md:w-[273px]" {...d} key={i}/> </div>
             }
