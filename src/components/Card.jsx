@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Card(props) {
   return (
-    <div className='w-[273px] shrink-0 grow'>
-      <div className='h-[182px] rounded-[15px] overflow-hidden relative'>
-      <img className='object-cover w-full h-full' src={"http://localhost:5000/images/" + props.image} alt=''/>
+    <div className='mb-3 w-[273px] shrink-0 grow cursor-pointer'>
+      <div className='group h-[182px] rounded-[15px] overflow-hidden relative'>
+      <img className='group-hover:scale-110 duration-150 object-cover w-full h-full' src={"http://localhost:5000/images/" + props.image} alt=''/>
       <div className='image-overlay absolute w-full bottom-0 flex items items-end p-2 text-[25px]
        font-bold text-white tracking-tighter'>
         {props.offer}
@@ -18,7 +18,7 @@ export default function Card(props) {
         <Star className='inline mr-2' />{props.rating}
         <span className='ml-2'>{props.minTime} - {props.maxTime} mins</span>
        </div> 
-       <div>
+       <div className='text-slate-700'>
         {props.name}
         <br/>
         {props.place}
