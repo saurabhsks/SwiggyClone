@@ -46,7 +46,7 @@ export default function Category() {
     <div className='text-[25px] font-bold'>What's on your mind</div>
     <div className='flex'>
         <div className='flex cursor-pointer justify-center items-center w-[30px] h-[30px] bg-[#e2e2e7]
-          rounded-full mx-2' >
+          rounded-full mx-2'>
             <FaArrowLeft onClick={prevSlide}/>
           </div>
           <div className='flex cursor-pointer justify-center items-center w-[30px] h-[30px] bg-[#e2e2e7]
@@ -65,9 +65,9 @@ export default function Category() {
                      style={{
                         transform: `translateX(-${slide*100}%)`
                     }} 
-                    key={index} className='w-[150px] shrink-0 duration-500'>
+                    key={index} className='group w-[150px] shrink-0 duration-500'>
                         {/* <img src={"http://localhost:5000/images/" + cat.image} alt="" /> */}
-                        <img src={"https://swiggyapis-ctp4.onrender.com/images/" + cat.image} alt="" />
+                        <img src={"https://swiggyapis-ctp4.onrender.com/images/" + cat.image} alt="" className='group-hover:scale-110 duration-150' />
                     </div>
                 )
             }
