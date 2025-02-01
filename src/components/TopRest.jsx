@@ -50,7 +50,7 @@ export default function TopRest() {
   return (
     <div className='max-w-[1200px] mx-auto mb-5'>
     <div className='flex my-5 items-center justify-between'>
-    <div className='text-[25px] font-bold'>Top Restaurant in Jodhpur</div>
+    <div className='text-[25px] font-bold'>Top Restaurants in Patna</div>
     <div className='flex'>
         <div className='flex cursor-pointer justify-center items-center w-[30px] h-[30px] bg-[#e2e2e7]
           rounded-full mx-2' >

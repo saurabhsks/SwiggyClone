@@ -28,7 +28,7 @@ export default function OnlineDelivery() {
   return (
     <div className='max-w-[1200px] mx-auto mb-5'>
         <div className='flex my-5 items-center justify-between'>
-        <div className='text-[25px] font-bold'>Restaurants with online food delivery in Jaipur</div>
+        <div className='text-[25px] font-bold'>Restaurants with online food delivery in Patna</div>
         </div>
         {/* <div> */}
             <div className='max-w-[1200px] mx-auto md:flex my-4 gap-4 cursor-pointer'>
