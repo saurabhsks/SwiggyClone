@@ -43,7 +43,7 @@ export default function Header() {
   return (
     <>
      <div className='black-overlay w-full h-full fixed duration-500' onClick={hideSideMenu} style={{
-        opacity:toggle ? 1:0,
+        opacity:toggle ? 99999:0,
         visibility:toggle ? "visible" : "hidden"
      }}>
         <div onClick={(e)=>{
@@ -52,7 +52,7 @@ export default function Header() {
         style={{
             left:toggle ? '0%': '-100%'
         }}
-        ></div>
+        >Hello ji </div>
      </div>
 
 
