@@ -36,7 +36,7 @@ export default function OnlineDelivery() {
              <div className='group-hover:scale-110 duration-150 cMBpNp p-3 rounded-md-shadow'>Sort By</div>
              <div className='group-hover:scale-110 duration-150 cMBpNp p-3 rounded-md-shadow'>Fast Delivery</div>
              <div className='group-hover:scale-110 duration-150 cMBpNp p-3 rounded-md-shadow'>New on Swiggy</div>
-             <div className='group-hover:scale-110 duration-150 cMBpNp p-3 rounded-md-shadow'>Ratings 4.0+</div>
+             <div className='group-hover:scale-110 duration-150 cMBpNp p-3 rounded-md-shadow'>Ratings 4.0 </div>
              <div className='group-hover:scale-110 duration-150 cMBpNp p-3 rounded-md-shadow'>Pure Veg</div>
              <div className='group-hover:scale-110 duration-150 cMBpNp p-3 rounded-md-shadow'>Offers</div>
              <div className='group-hover:scale-110 duration-150 cMBpNp p-3 rounded-md-shadow'>Rs.300-Rs.600</div>
