@@ -17,11 +17,11 @@ export default function Card(props) {
       <div className='mt-3 text-[14px] md:text-xl font-bold'>
         {props.title}
        </div> 
-       <div className='flex sm:text-[12px]'>
+       <div className='flex text-[12px] md:text-[15px]'>
         <Star className='inline mr-2' />{props.rating}
         <span className='ml-2'>{props.minTime} - {props.maxTime} mins</span>
        </div> 
-       <div className='text-[12px] md:text-slate-700'>
+       <div className='text-[12px] md:text-[15px] md:text-slate-700'>
         {props.name}
         <br/>
         {props.place}
